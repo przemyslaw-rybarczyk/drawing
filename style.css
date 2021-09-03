@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+#controls {
+  min-width: 10em;
+  padding: 8px;
+  border-right: 2px solid;
+}
+
+label {
+  font-size: 80%;
+}
+
+button, input {
+  display: block;
+  width: 100%;
+}
+
+button {
+  margin: 2px 0px;
+}
+
+input[type="number"] {
+  padding: 0px;
+}
+
+#drawing {
+  display: flex;
+  overflow: auto;
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}

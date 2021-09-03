@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Drawing</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <div id="controls">
+            <label for="width">Image width</label>
+            <input type="number" min="1" id="width">
+            <label for="height">Image height</label>
+            <input type="number" min="1" id="height">
+            <label for="zoom">Zoom level</label>
+            <input type="number" min="0" step="any" id="zoom">
+            <label for="thickness">Brush thickness</label>
+            <input type="number" min="0" step="any" id="thickness">
+            <label for="color">Color</label>
+            <input type="color" id="color">
+            <button id="color_picker">Color Picker</button>
+            <br>
+            <button id="brush">Brush</button>
+            <button id="line">Line</button>
+            <button id="rectangle">Rectangle</button>
+            <button id="filled_rectangle">Filled Rectangle</button>
+            <button id="ellipse">Ellipse</button>
+            <button id="filled_ellipse">Filled Ellipse</button>
+            <br>
+            <button id="undo">Undo</button>
+        </div>
+        <div id="drawing">
+            <canvas></canvas>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
